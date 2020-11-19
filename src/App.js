@@ -1,11 +1,11 @@
 
-import Table from "./components/Table"
+import Data from "./components/Data"
 
 
 function App() {
   return (
     <div >
-      <Table />
+      <Data />
     </div>
   );
 }

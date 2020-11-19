@@ -1,37 +1,35 @@
 import React from "react"
+import Moment from "react-moment"
 
-function Table(){
+function Table(props) {
     return (
         <table className="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">DOB</th>
+                </tr>
+            </thead>
+            <tbody>
+            {props.results.map(result => (
+                    <tr className="table" >
+                     
+
+                        <td> <img src={result.picture.medium} alt="" /></td>
+                        
+                        <td>{result.name.first + " " + result.name.last}  </td>
+
+                        <td>{result.cell}</td>
+                        <td className="email"><a href={result.email}>{result.email}</a></td>
+                        <td><Moment format="MM/DD/YYYY">{result.dob.date}</Moment></td>
+
+                    </tr>
+                ))}
+            </tbody>
+        </table>
     )
 }
 
