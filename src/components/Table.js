@@ -7,7 +7,7 @@ function Table(props) {
             <thead>
                 <tr>
                     <th></th>
-                    <th onClick={props.sortByFirstName} scope="col">Name</th>
+                   <th  scope="col"> <button onClick={props.sortByFirstName}>Name</button></th>
                     <th scope="col">Phone</th>
                     <th scope="col">Email</th>
                     <th scope="col">DOB</th>
