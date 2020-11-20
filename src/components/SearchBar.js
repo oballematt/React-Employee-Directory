@@ -3,15 +3,18 @@ import React from "react"
 
 function SearchBar(props) {
     return (
-        
-        <div className="input-group mb-3">
-            <div className="input-group-prepend">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
-            </div>
-            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
+        <div>
+        <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Search for employees!</span>
         </div>
+        <input type="text" onChange={props.handleInputChange}  class="form-control"/>
+       
+      </div>
+      </div>
         
     )
 }
 
 export default SearchBar
+
