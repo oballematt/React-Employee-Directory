@@ -2,7 +2,7 @@
   "name": "react-employee-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "git@github.com:oballematt/React-Employee-Directory.git",
+  "homepage": "https://oballematt.github.io/React-Employee-Directory",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.0",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
