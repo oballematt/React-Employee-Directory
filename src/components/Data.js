@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import SearchBar from "./SearchBar"
 import API from "../utils/API"
-import Table from "./Table"
+import Table from "./Table/Table"
 
 class Data extends Component {
     state = {
