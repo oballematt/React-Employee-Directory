@@ -6,6 +6,8 @@
   ## Description
 
   In this app, the user will be able to dynamically search for any employeee. Using the search bar at the top of the page, the user will search for any employee they want to view. As theyre typing, all employess name who match the input will appear while the user is searching. 
+  
+  Website: https://reactemployeedirectory-mo.herokuapp.com/
 
   ![Directory](src/images/directory.PNG)
   
